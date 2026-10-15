@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8e9e8">
+  <meta name="description" content="Valentina te invita a vivir un día mágico en El bosque encantado. ¡Descubre la invitación y confirma tu asistencia!">
+  <title>Valentina | Invitación de cumpleaños · BabyKids Studio Fotográfico</title>
+
+  <!-- Vista previa para WhatsApp: funcionará cuando se publique en Invitacion-Valentina -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BabyKids Studio Fotográfico">
+  <meta property="og:title" content="Valentina | Invitación de cumpleaños">
+  <meta property="og:description" content="¡Un día mágico nos espera! Acompáñanos a celebrar el cumpleaños de Valentina.">
+  <meta property="og:image" content="https://babykidsstudioec.github.io/Invitacion-Valentina/assets/img/preview-whatsapp.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://babykidsstudioec.github.io/Invitacion-Valentina/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="assets/css/sobre.css">
+
+  <!-- Diseño premium incluido aquí para reemplazar únicamente index.html. -->
+  <style>
+    :root {
+      --premium-rose: #a9647a;
+      --premium-ink: #6a4150;
+      --premium-soft: #f5e0e2;
+      --premium-gold: #c5a079;
+      --premium-milk: #fff9f5;
+      --premium-cream: #fef8f4;
+      --premium-line: rgba(181,129,116,.27);
+      --premium-shadow: 0 18px 60px rgba(93,53,70,.14);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-width: 320px; margin: 0;
+      background: #fbf3f1;
+      background-image:
+        radial-gradient(circle at 11% 10%,rgba(235,188,190,.39) 0,transparent 32%),
+        radial-gradient(circle at 88% 24%,rgba(207,186,156,.33) 0,transparent 28%),
+        linear-gradient(145deg,#fefaf6,#fae9eb 62%,#f5e6e0);
+      color: var(--premium-ink);
+      font-family: 'DM Sans',Arial,sans-serif;
+    }
+    .page-glow { opacity: .55; pointer-events: none; }
+    .invitation {
+      width: min(100%, 595px); max-width: 595px; margin: 32px auto 58px;
+      background: #fffbf8; border: 1px solid rgba(199,160,147,.6);
+      box-shadow: 0 30px 90px rgba(97,53,70,.18), 0 0 0 7px rgba(255,252,250,.30);
+      border-radius: 220px 220px 14px 14px / 38px 38px 14px 14px;
+      overflow: hidden; isolation: isolate;
+    }
+    .mini-header {
+      padding: 19px 24px 17px; gap: 12px; flex-wrap: wrap;
+      background: linear-gradient(100deg,#fffaf6,#fdf2f0,#fffaf6);
+      border-bottom: 1px solid #eddcd3; color: #9f7b7e;
+      letter-spacing: .21em; font-size: 10px;
+    }
+    .mini-logo {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 25px; height: 25px; font-size: 18px; border-radius: 50%;
+      color: #ad7082; background: #fff0ec; border: 1px solid #e2b8b9;
+    }
+    .mini-header-brand { font-weight: 500; letter-spacing: .19em; }
+    .mini-header-brand strong { font-weight: 700; }
+    .mini-header-line { background: #cfaa8b; width: 20px; }
+    .mini-header-detail { letter-spacing: .12em; font-size: 8px; }
+
+    .hero {
+      margin: 0; position: relative; aspect-ratio: 1.27;
+      border: 0; outline: 0; overflow: hidden;
+      background: #e1c2b6;
+    }
+    .hero::before {
+      content: ''; position: absolute; inset: 0; z-index: 0;
+      background: url('assets/img/valentina.webp') center / cover no-repeat;
+      filter: blur(22px) brightness(1.08);
+      transform: scale(1.09);
+      opacity: .56;
+    }
+    .hero::after {
+      content: ''; position: absolute; z-index: 2;
+      inset: 14px; border: 1px solid rgba(255,245,227,.8);
+      box-shadow: 0 0 0 1px rgba(118,69,70,.18); pointer-events: none;
+    }
+    .hero-photo {
+      position: relative; z-index: 1; width: 100%; height: 100%;
+      display: block; object-fit: contain; object-position: center;
+    }
+    .hero-top-label {
+      z-index: 4; top: 24px; background: rgba(255,250,242,.92);
+      color: #976d72; letter-spacing: .2em; border: 1px solid #f0dbce;
+      padding: 9px 17px; border-radius: 999px; font-size: 9px;
+      box-shadow: 0 4px 13px rgba(62,35,35,.13);
+    }
+    .butterfly { z-index: 3; font-size: 26px; text-shadow: 0 0 20px white; }
+    .butterfly-a { left: 5%; top: 26%; }
+    .butterfly-b { right: 5%; top: 40%; }
+    .hero-ground { position:absolute; bottom:0; inset-inline: 0; height: 22%; z-index:2;
+      background: linear-gradient(0deg,rgba(78,48,43,.18),transparent); pointer-events:none; }
+
+    .welcome {
+      background: linear-gradient(180deg,#fffcf8,#fff7f5 75%,#fdf2ef);
+      border: 1px solid #ebd3c5;
+      box-shadow: 0 14px 32px rgba(99,57,61,.10);
+      position: relative; z-index: 5;
+      margin: -30px 22px 0; padding: 25px 22px 28px;
+      border-radius: 100px 100px 13px 13px / 25px 25px 13px 13px;
+    }
+    .welcome::before {
+      content: ''; position:absolute; inset: 7px; pointer-events:none;
+      border:1px solid rgba(201,160,134,.42);
+      border-radius: 80px 80px 10px 10px / 23px 23px 10px 10px;
+    }
+    .welcome::after {
+      content: '✿'; color: #d3a9a5; font-size: 27px; line-height: 1;
+      position:absolute; top:-18px; left:50%; transform:translateX(-50%);
+      background:#fffaf5; padding:4px 9px; border-radius:40px;
+      border:1px solid #e9d2cb;
+    }
+    .welcome .swirl { display: none; }
+    .eyebrow { color:#ad7e8b; font-size:10px; letter-spacing:.27em; font-weight:700; }
+    .welcome .eyebrow { margin: 12px 0 0; }
+    .welcome h1 {
+      margin: 3px auto -3px; color: #aa697d;
+      font-family:'Great Vibes','Cormorant Garamond',serif;
+      font-weight:400; font-size: clamp(77px,15vw,105px);
+      line-height:1.25; letter-spacing:0;
+      text-shadow: 1px 2px 0 #fff,0 6px 15px #dfb8bf77;
+    }
+    .welcome .headline {
+      color:#855f67; font-family:'Cormorant Garamond',Georgia,serif;
+      font-size: clamp(24px,5.3vw,31px); font-weight:600;
+      line-height:1.13; margin:0 auto 14px; max-width:370px;
+    }
+    .ornament { gap: 14px; color:#b9888f; font-size:20px; }
+    .ornament span { background:linear-gradient(90deg,transparent,#ceac8e); width:74px; }
+    .ornament span:last-child {transform:rotate(180deg);}
+    .welcome-message { color:#9a7779; font-size:12px; max-width:330px; margin-top:12px; line-height:1.75; }
+    .quick-facts { display:flex; flex-wrap:wrap; justify-content:center; gap:7px; margin:17px auto 0; }
+    .quick-facts span {
+      border:1px solid #e9d4c6; background:#fffcf8; color:#97707d;
+      border-radius:40px; font-size:10px; font-weight:700;
+      padding:8px 11px; letter-spacing:.04em;
+    }
+
+    .birthday-music {
+      margin: 21px 30px 28px; padding: 12px 16px 11px;
+      background: linear-gradient(120deg,#f8e6e6,#fef6ef);
+      border:1px solid #e7c9c4; border-radius:18px;
+      box-shadow: 0 6px 17px #9559670c;
+    }
+    .birthday-music-button {
+      border:1px solid #9b6e79; min-height:50px;
+      background:linear-gradient(115deg,#a46b7b,#845665);
+      box-shadow:0 8px 18px #93617330; letter-spacing:.04em;
+    }
+    .birthday-music-button:hover {background:#865667;}
+    .birthday-music-hint {font-size:10px;}
+
+    .details {
+      margin: 0 24px; padding:32px 26px 34px;
+      background:
+        radial-gradient(circle at 0% 0%,#f1d6d51c,transparent 55%),
+        linear-gradient(160deg,#fff9f5,#fcf0ee);
+      border:1px solid #dfc4b7; position:relative;
+      border-radius: 14px;
+    }
+    .details::before,.details::after {
+      position:absolute; content:'✧'; color:#cba18b; font-size:21px; top:11px;
+    }
+    .details::before {left:14px} .details::after{right:14px}
+    .details h2,.countdown-card h2,.rsvp h2 {
+      font-family:'Cormorant Garamond',Georgia,serif; font-size:43px; font-weight:600;
+      line-height:1; color: #815366;
+    }
+    .details .detail-intro {font-size:12px; margin:10px 0 22px;}
+    .detail-grid {gap:12px;}
+    .detail-item {
+      border:1px solid #e5ccbf; background:#fffdf9;
+      border-radius:11px; padding:19px 9px 17px; gap:10px; min-height:145px;
+      box-shadow:0 7px 18px rgba(93,66,53,.05);
+    }
+    .detail-symbol { width:38px;height:38px;display:grid;place-items:center;
+      background:#fbeaec; border-radius:50%;font-size:23px;color:#aa7280; }
+    .detail-caption {font-size:9px; color:#b18591; letter-spacing:.23em;}
+    .detail-item strong {font-size:14px;color:#795c63;line-height:1.4;}
+    .place {
+      background: #fffcfa; border: 1px solid #e5ccbf;
+      border-radius:11px; padding:17px 18px; margin:12px 0 16px;
+      justify-content:flex-start;
+    }
+    .place-pin { width:43px;height:43px;display:grid;place-items:center;
+      border-radius:50%;background:#f7e5e4; font-size:30px;flex:0 0 auto; }
+    .place-copy strong {font-size:17px;}
+    .place-copy small {font-size:10px;}
+    .button-outline {
+      border: 1px solid #b1808c; background:linear-gradient(95deg,#fffdfa,#fff2f1);
+      border-radius:40px; color:#8c5265; font-size:12px;
+      box-shadow:0 5px 15px #8c52650a;
+    }
+    .button-outline:hover{background:#faecee;box-shadow:0 8px 17px #8c52651a;}
+    .helper {font-size:10px;}
+
+    .countdown-card {
+      margin:25px 24px 0; border-radius:17px; position:relative;
+      background: radial-gradient(circle at 0 0,rgba(255,255,255,.23),transparent 46%),
+        radial-gradient(circle at 100% 100%,rgba(235,191,174,.16),transparent 48%),
+        linear-gradient(145deg,#aa7786,#784e61);
+      border: 1px solid rgba(116,66,81,.55);
+      padding: 35px 20px 30px;
+      box-shadow:0 12px 30px #80556b36;
+    }
+    .countdown-card::before {
+      content:'';position:absolute;inset:8px;pointer-events:none;
+      border:1px solid rgba(255,235,218,.40);border-radius:12px;
+    }
+    .countdown-decoration {font-size:14px;margin:0 0 10px;color:#f2d7bf;}
+    .countdown-card h2 {color:#fff7f0;font-size:43px;}
+    .countdown {gap:9px; margin-top:23px;}
+    .countdown>div {border-radius:9px;background:#ffffff17;border-color:#ffffff48;
+      padding:13px 0 10px;backdrop-filter:blur(3px);}
+    .countdown strong {font-size:clamp(27px,6vw,44px);}
+    .countdown span {letter-spacing:.09em;font-size:8px;}
+    .countdown-note {font-size:11px;}
+
+    .rsvp {
+      margin:26px 24px 0;padding:33px 34px 36px;
+      border: 1px solid #e3c8bd;border-radius:14px;
+      background:linear-gradient(180deg,#fffdf9,#fff7f3);
+      box-shadow:0 6px 20px #9b6e6e0a;
+    }
+    .rsvp .swirl {color:#c3a58a;}
+    .rsvp h2 {font-size:49px;}
+    .rsvp>p:not(.eyebrow):not(.tiny-note){font-size:12px;}
+    #rsvp-form {gap:8px;}
+    #rsvp-form input,#rsvp-form select {
+      background:#fffdfb; border:1px solid #e2c9c1;
+      border-radius:9px;min-height:49px;padding:12px 14px;
+    }
+    #rsvp-form label{font-size:11px;margin-top:10px;}
+    .button-filled {
+      min-height:54px; background:linear-gradient(105deg,#b57b8e,#895769);
+      border:1px solid #8f5d6e; border-radius:40px; font-size:12px;
+      box-shadow:0 9px 20px #95637430;
+    }
+    .button-filled:disabled {background:#cfb7bf;box-shadow:none;}
+    .footer {
+      padding:39px 18px 42px;
+      text-align:center;
+      background:linear-gradient(180deg,transparent,#faeae8);
+    }
+    .footer-flower {
+      color:#b97d90; width:45px;height:45px; display:grid;place-items:center;
+      margin:0 auto 10px; font-size:30px;
+      border-radius:50%;border:1px solid #e8c8c8;background:#fff7f5;
+    }
+    .footer>p {font-style:italic;font-size:29px;color:#975f73;margin:2px auto 18px;
+      max-width:360px;line-height:1.1;}
+    .footer small {font-size:9px;letter-spacing:.13em;color:#a47a84;}
+    .footer small strong{font-weight:700;}
+
+    @media (max-width:580px) {
+      .invitation { width:100%;margin:0 auto; border:0; border-radius:0;box-shadow:none; }
+      .mini-header {padding:14px 12px;gap:7px; font-size:9px;}
+      .mini-header-detail {font-size:8px;}
+      .mini-header-line {width:12px;}
+      .hero {margin:0;aspect-ratio:1.27;border:0;}
+      .hero-top-label {top:19px;font-size:8px;max-width:90%;padding:8px 11px;}
+      .hero::after{inset:9px;}
+      .welcome {margin:-25px 15px 0;padding:22px 17px 26px;}
+      .welcome h1 {font-size:clamp(65px,15vw,94px);}
+      .welcome .headline {font-size:26px;}
+      .welcome-message {font-size:12px;}
+      .quick-facts span{font-size:9px;padding:7px 10px;}
+      .birthday-music {margin:18px 20px 25px;}
+      .details {margin:0 13px;padding:30px 18px;}
+      .details h2 {font-size:39px;}
+      .detail-grid {gap:9px;}
+      .detail-item {padding:16px 6px;}
+      .detail-item strong {font-size:12px;}
+      .countdown-card {margin:22px 13px 0; padding:31px 14px 29px;}
+      .countdown-card h2{font-size:39px;}
+      .countdown{gap:6px;}
+      .rsvp{margin:22px 13px 0;padding:30px 23px 32px;}
+      .footer {padding:36px 15px 38px;}
+    }
+    @media (max-width:350px){
+      .mini-header-detail,.mini-header-line{display:none;}
+      .welcome h1{font-size:69px;}
+      .detail-grid{gap:6px;}
+      .countdown>div{padding-inline:0;}
+    }
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important;}
+    }
+  </style>
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="assets/js/sobre.js" defer></script>
+</head>
+<body>
+
+  <!-- NUEVO: sobre interactivo de bienvenida; la invitación original permanece intacta. -->
+  <div id="invitation-gate" class="envelope-gate" role="region" aria-label="Sobre de invitación de Valentina">
+    <div class="gate-bokeh gate-bokeh-one" aria-hidden="true"></div>
+    <div class="gate-bokeh gate-bokeh-two" aria-hidden="true"></div>
+    <div class="gate-inner">
+      <div class="gate-overline">BABYKIDS STUDIO FOTOGRÁFICO</div>
+      <div class="gate-stars" aria-hidden="true">✦ &nbsp; ✧ &nbsp; ♡ &nbsp; ✧ &nbsp; ✦</div>
+      <p class="gate-pretitle">Hay una sorpresa esperando por ti</p>
+      <h2 class="gate-title">Una invitación <em>especial</em></h2>
+      <p class="gate-subtitle">Un pequeño sobre, una gran celebración</p>
+      <div class="gate-centerpiece">
+        <span class="gate-flower gate-flower-a" aria-hidden="true">✿</span>
+        <span class="gate-flower gate-flower-b" aria-hidden="true">✿</span>
+        <span class="gate-sparkle gate-sparkle-a" aria-hidden="true">✧</span>
+        <span class="gate-sparkle gate-sparkle-b" aria-hidden="true">✧</span>
+        <button id="open-envelope" class="envelope-action" type="button" aria-label="Abrir el sobre y ver la invitación de Valentina">
+          <span class="envelope-card" aria-hidden="true">
+            <span class="envelope-card-top">UNA INVITACIÓN PARA TI</span>
+            <span class="envelope-card-name">Valentina</span>
+            <span class="envelope-card-bottom">24 · DICIEMBRE · 2026</span>
+          </span>
+          <span class="envelope-back" aria-hidden="true"></span>
+          <span class="envelope-flap" aria-hidden="true"></span>
+          <span class="envelope-pocket" aria-hidden="true"></span>
+          <span class="envelope-side envelope-side-left" aria-hidden="true"></span>
+          <span class="envelope-side envelope-side-right" aria-hidden="true"></span>
+          <span class="envelope-seal" aria-hidden="true">♡</span>
+        </button>
+      </div>
+      <p class="gate-hint" id="gate-hint"><span aria-hidden="true">↟</span> Toca el sobre para abrirlo <span aria-hidden="true">↟</span></p>
+      <p class="gate-footer">CON CARIÑO, PARA UN DÍA INOLVIDABLE</p>
+    </div>
+  </div>
+
+  <div class="page-glow" aria-hidden="true"></div>
+  <main class="invitation" id="inicio">
+    <header class="mini-header" aria-label="BabyKids Studio Fotográfico">
+      <span class="mini-logo" aria-hidden="true">♡</span>
+      <span class="mini-header-brand">BABYKIDS <strong>STUDIO FOTOGRÁFICO</strong></span>
+      <span class="mini-header-line" aria-hidden="true"></span>
+      <span class="mini-header-detail">INVITACIÓN ESPECIAL</span>
+    </header>
+
+    <section class="hero" aria-label="Fotografía de Valentina en su jardín encantado">
+      <img class="hero-photo" src="assets/img/valentina.webp" alt="Valentina en un jardín de fantasía con flores y honguitos rosados" fetchpriority="high">
+      <div class="hero-top-label">✦ BIENVENIDOS A UN MUNDO DE MAGIA ✦</div>
+      <span class="butterfly butterfly-a" aria-hidden="true">✦</span>
+      <span class="butterfly butterfly-b" aria-hidden="true">✧</span>
+      <span class="hero-ground" aria-hidden="true"></span>
+    </section>
+
+    <section class="welcome" aria-labelledby="invite-name">
+      <p class="eyebrow">✧ &nbsp; UNA CELEBRACIÓN ENCANTADA &nbsp; ✧</p>
+      <h1 id="invite-name">Valentina</h1>
+      <p class="headline">¡Te invita a celebrar<br>su cumpleaños!</p>
+      <div class="ornament" aria-hidden="true"><span></span>♡<span></span></div>
+      <p class="welcome-message" id="message">Un día lleno de magia, sonrisas y momentos para recordar.</p>
+      <div class="quick-facts" aria-label="Resumen del evento">
+        <span>✦ 24 de diciembre</span><span>✦ 3:00 p. m.</span><span>✦ El bosque encantado</span>
+      </div>
+    </section>
+
+    <section class="birthday-music" aria-label="Música de cumpleaños">
+      <button id="birthday-music-button" class="birthday-music-button" type="button" aria-pressed="false" aria-label="Reproducir música instrumental de cumpleaños">
+        <span class="birthday-music-symbol" aria-hidden="true">♫</span>
+        <span id="birthday-music-label">Escuchar Cumpleaños feliz</span>
+        <span class="birthday-music-play" aria-hidden="true">▶</span>
+      </button>
+      <p class="birthday-music-hint" id="birthday-music-hint">Melodía instrumental · pulsa para activar la música</p>
+      <audio id="birthday-music-audio" src="assets/audio/cumpleanos-feliz.mp3" preload="none" loop></audio>
+    </section>
+
+    <section class="details" aria-labelledby="details-heading">
+      <h2 id="details-heading">Los detalles de nuestra magia</h2>
+      <p class="detail-intro">Reserva esta fecha en tu corazón. ¡Nos encantará verte!</p>
+      <div class="detail-grid">
+        <div class="detail-item">
+          <span class="detail-symbol" aria-hidden="true">✧</span>
+          <span class="detail-caption">FECHA</span>
+          <strong id="date-text">24 de diciembre de 2026</strong>
+        </div>
+        <div class="detail-item">
+          <span class="detail-symbol" aria-hidden="true">◷</span>
+          <span class="detail-caption">HORA</span>
+          <strong id="time-text">3:00 p. m.</strong>
+        </div>
+      </div>
+      <div class="place">
+        <span class="place-pin" aria-hidden="true">⌖</span>
+        <div class="place-copy">
+          <span class="detail-caption">LUGAR</span>
+          <strong id="place-name">El bosque encantado</strong>
+          <small id="place-address">Ubicación exacta disponible en Google Maps</small>
+        </div>
+      </div>
+      <a id="map-link" class="button button-outline" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+        <span aria-hidden="true">⌖</span> Cómo llegar en Google Maps <span aria-hidden="true">↗</span>
+      </a>
+      <p class="helper" id="map-helper">Toca el botón para abrir la ubicación.</p>
+    </section>
+
+    <section class="countdown-card" aria-labelledby="countdown-title">
+      <div class="countdown-decoration" aria-hidden="true">✦ &nbsp; ♡ &nbsp; ✦</div>
+      <h2 id="countdown-title">La magia comienza en…</h2>
+      <div id="countdown" class="countdown" aria-label="Cuenta regresiva" role="timer">
+        <div><strong id="days">--</strong><span>DÍAS</span></div>
+        <div><strong id="hours">--</strong><span>HORAS</span></div>
+        <div><strong id="minutes">--</strong><span>MINUTOS</span></div>
+        <div><strong id="seconds">--</strong><span>SEGUNDOS</span></div>
+      </div>
+      <p class="countdown-note" id="countdown-note">¡Cada segundo nos acerca a un día inolvidable!</p>
+    </section>
+
+    <section class="rsvp" id="confirmacion" aria-labelledby="rsvp-title">
+      <div class="swirl small" aria-hidden="true">✦ &nbsp; ♡ &nbsp; ✦</div>
+      <p class="eyebrow">CONFIRMACIÓN DE ASISTENCIA</p>
+      <h2 id="rsvp-title">¿Nos acompañas?</h2>
+      <p>Nos haría muy feliz contar contigo en este día especial.</p>
+      <form id="rsvp-form" novalidate>
+        <label for="guest-name">Tu nombre</label>
+        <input id="guest-name" name="guestName" autocomplete="name" placeholder="Nombre y apellido" maxlength="80" required>
+        <label for="attendance">¿Podrás asistir?</label>
+        <select id="attendance" name="attendance">
+          <option value="si">¡Sí, estaré ahí!</option>
+          <option value="no">Lo siento, no podré asistir</option>
+        </select>
+        <label for="guest-count">Número de asistentes <span class="optional">(incluyéndote)</span></label>
+        <select id="guest-count" name="guests">
+          <option value="1">1 persona</option><option value="2">2 personas</option>
+          <option value="3">3 personas</option><option value="4">4 personas</option>
+          <option value="5">5 personas</option><option value="6">6 personas</option>
+        </select>
+        <button class="button button-filled" id="rsvp-button" type="submit" disabled>
+          <span aria-hidden="true">♡</span> Confirmar por WhatsApp <span aria-hidden="true">↗</span>
+        </button>
+        <p class="helper" id="rsvp-helper" role="status">Preparando confirmación...</p>
+      </form>
+      <p class="tiny-note">Al pulsar el botón se abrirá WhatsApp con tu respuesta preparada. Recuerda presionar <strong>Enviar</strong> para completar la confirmación.</p>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-flower" aria-hidden="true">♡</div>
+      <p>Será un día mágico para compartir juntos.</p>
+      <small>UNA CREACIÓN DE <strong>BABYKIDS STUDIO FOTOGRÁFICO</strong></small>
+    </footer>
+  </main>
+</body>
+</html>

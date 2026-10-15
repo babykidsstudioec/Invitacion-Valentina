@@ -1,0 +1,32 @@
+BABYKIDS STUDIO FOTOGRÁFICO — INVITACIÓN VALENTINA CON SOBRE ANIMADO
+
+1. Abre Visual Studio Code.
+2. Selecciona File > Open Folder y abre esta carpeta: Invitacion-Valentina-Sobre-Animado.
+3. Haz clic derecho en index.html y selecciona Open with Live Server.
+4. Toca el sobre: se abre y aparece la invitación con música (si el navegador lo permite).
+5. Prueba la cuenta regresiva, Google Maps y la confirmación por WhatsApp.
+
+DATOS CONFIRMADOS
+Valentina, 24/12/2026, 15:00, El bosque encantado.
+Google Maps: -2.1117833261555625, -79.89998191975077
+WhatsApp de confirmaciones: 593997833786
+
+ARCHIVOS IMPORTANTES
+index.html: invitación completa con sobre.
+styles.css: diseño original de la invitación premium.
+assets/css/sobre.css: animación del sobre.
+assets/js/sobre.js: abre el sobre e inicia la música con el toque del usuario.
+config.js: nombre, fecha, hora, mapa, teléfono.
+app.js: cuenta regresiva, música, ubicación y confirmación.
+assets/img/: foto y vista previa de WhatsApp.
+assets/audio/: melodía instrumental de cumpleaños.
+
+PARA WHATSAPP
+La imagen preview-whatsapp.jpg está incluida. Las etiquetas Open Graph en index.html
+apuntan a https://babykidsstudioec.github.io/Invitacion-Valentina/. Si publicas
+el sitio en un repositorio de otro nombre, actualiza esas URLs antes de compartir.
+Se necesita publicar en un servidor web para que WhatsApp muestre la vista previa.
+
+IMPORTANTE: el invitado debe pulsar ENVIAR en WhatsApp para confirmar.
+La web no almacena respuestas ni información en servidores.
+Las fotografías de menores serán públicas si el repositorio GitHub Pages es público.

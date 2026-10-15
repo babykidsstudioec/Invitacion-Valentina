@@ -1,0 +1,31 @@
+BABYKIDS STUDIO FOTOGRÁFICO | INVITACIÓN PREMIUM DE VALENTINA
+===============================================================
+
+CAMBIOS DE ESTA VERSIÓN
+- Portada fotográfica más destacada y marco premium.
+- Tipografía elegante para Valentina; detalle de corazones.
+- Diseño mejorado de fecha, hora, lugar, cuenta regresiva y formulario.
+- Conserva fotografía, música instrumental y vista previa WhatsApp.
+- Confirmación preparada por WhatsApp (el invitado debe tocar Enviar).
+
+PARA MODIFICAR SOLO EL DISEÑO QUE YA TIENES
+1. Abre la carpeta de tu invitación en Visual Studio Code.
+2. Haz una copia de tu index.html actual.
+3. Sustituye SOLO index.html por el de este ZIP.
+4. NO borres assets/, config.js, app.js ni styles.css.
+5. Abre index.html con Live Server y prueba en computador y teléfono.
+
+DATOS DEL EVENTO (YA CONFIGURADOS EN config.js)
+Nombre: Valentina
+Fecha: 24 de diciembre de 2026
+Hora: 15:00 Ecuador continental
+Lugar: El bosque encantado
+Mapa: https://www.google.com/maps/search/?api=1&query=-2.1117833261555625%2C-79.89998191975077
+WhatsApp confirmación: +593 99 783 3786
+
+IMPORTANTE
+La configuración de Open Graph está preparada para el repositorio
+babykidsstudioec/Invitacion-Valentina en GitHub Pages. Si usas otro nombre,
+actualiza og:url y og:image en index.html antes de publicar.
+El archivo de vista previa es assets/img/preview-whatsapp.jpg.
+No comparta en público fotografías infantiles sin autorización de sus representantes.

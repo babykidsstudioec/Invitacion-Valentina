@@ -1,0 +1,49 @@
+/* BABYKIDS STUDIO FOTOGRÁFICO — SOBRE PREMIUM PARA VALENTINA */
+html.envelope-locked,html.envelope-locked body{overflow:hidden!important;overscroll-behavior:none}
+.envelope-gate{position:fixed;inset:0;z-index:9999;display:grid;place-items:center;overflow:hidden;background:radial-gradient(circle at 14% 16%,#fffaf8 0%,transparent 35%),radial-gradient(circle at 86% 76%,#efcdd1 0%,transparent 40%),linear-gradient(145deg,#fefaf5,#f6e6e7 53%,#eee0dc);color:#80596a;isolation:isolate;transition:opacity .72s ease,visibility .72s ease}
+.envelope-gate[hidden]{display:none!important}
+.envelope-gate::before{content:'';position:absolute;inset:-18px;background:url('../img/valentina.webp') center/cover no-repeat;opacity:.11;filter:blur(24px) saturate(.5);z-index:-1}
+.envelope-gate::after{content:'';position:absolute;inset:18px;border:1px solid #d5b4a17d;border-radius:13px;pointer-events:none;z-index:0}
+.gate-bokeh{position:absolute;pointer-events:none;width:290px;height:290px;border-radius:50%;background:radial-gradient(circle,#f4d1c56f,transparent 72%);filter:blur(3px)}
+.gate-bokeh-one{left:-140px;top:-110px}.gate-bokeh-two{right:-130px;bottom:-125px}
+.gate-inner{position:relative;z-index:1;width:min(100%,650px);height:100%;max-height:920px;min-height:0;padding:clamp(20px,4vh,42px) 18px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.gate-overline{font-family:'DM Sans',Arial,sans-serif;font-weight:700;font-size:clamp(9px,1.1vw,11px);letter-spacing:.3em;color:#a37e82;text-wrap:balance}
+.gate-stars{font-size:17px;color:#bf9e8b;letter-spacing:.22em;margin:clamp(10px,2vh,18px) 0 3px}
+.gate-pretitle{margin:7px 0 0;font-size:11px;text-transform:uppercase;letter-spacing:.16em;color:#ad8f92}
+.gate-title{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;color:#865c6a;font-size:clamp(36px,6.4vw,60px);line-height:.98;margin:7px 0 8px;text-wrap:balance}
+.gate-title em{font-family:'Great Vibes','Cormorant Garamond',serif;font-weight:400;font-size:1.2em;color:#a66d80;padding-right:7px}
+.gate-subtitle{margin:0;color:#a9898c;font-size:clamp(11px,2vw,13px);letter-spacing:.045em}
+.gate-centerpiece{position:relative;flex:none;width:min(88vw,420px);height:clamp(220px,39vh,344px);display:grid;place-items:center;perspective:1000px;margin:clamp(4px,1vh,12px) 0 0}
+.envelope-action{position:relative;width:min(88vw,380px);aspect-ratio:1.62;border:0;padding:0;background:none;cursor:pointer;outline-offset:9px;filter:drop-shadow(0 17px 17px rgba(90,51,64,.17));-webkit-tap-highlight-color:transparent;transform:translateZ(0)}
+.envelope-action:focus-visible{outline:3px solid #a26980;border-radius:14px}
+.envelope-action>*{position:absolute;display:block;pointer-events:none}
+.envelope-back{inset:0;border-radius:9px;background:linear-gradient(145deg,#f1d4d0,#cfaaa8);border:1px solid #c79a9a;box-shadow:0 6px 21px #8d56602a,inset 0 0 0 5px #ffede68a;z-index:0}
+.envelope-card{z-index:2;left:12%;width:76%;height:92%;bottom:2%;padding:12% 6% 7%;border:1px solid #ddbdab;background:linear-gradient(155deg,#fffdfa 0%,#fff2ed 88%);border-radius:6px 6px 2px 2px;box-shadow:0 5px 12px #76515c23;display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;gap:3px;transform:translateY(0);transition:transform 1s cubic-bezier(.22,.61,.22,1) .48s}
+.envelope-card::before{content:'';position:absolute;inset:7px;border:1px solid #d8b99882;pointer-events:none}
+.envelope-card-top{font:700 clamp(7px,1.1vw,10px) 'DM Sans',sans-serif;letter-spacing:.18em;color:#bd9e93}
+.envelope-card-name{font:400 clamp(39px,7vw,56px) 'Great Vibes','Cormorant Garamond',serif;color:#a56e80;line-height:1.1;transform:translateX(-2px)}
+.envelope-card-bottom{font:600 9px 'DM Sans',sans-serif;letter-spacing:.1em;color:#b2938e}
+.envelope-flap{z-index:5;inset:0 0 33% 0;clip-path:polygon(0 0,100% 0,50% 95%);background:linear-gradient(160deg,#f2ded9,#e2bebc);transform-origin:50% 0%;transform:rotateX(0);backface-visibility:visible;transition:transform .63s ease;filter:drop-shadow(0 3px 1px #87636a1c)}
+.envelope-pocket{z-index:4;inset:0;border-radius:0 0 9px 9px;clip-path:polygon(0 30%,50% 73%,100% 30%,100% 100%,0 100%);background:linear-gradient(180deg,#edcecb 3%,#e3c0bf 65%,#d9b3b6 100%);box-shadow:inset 0 -5px 9px #bb8d963b}
+.envelope-side{z-index:3;inset:0;background:#e9cac9}
+.envelope-side-left{clip-path:polygon(0 0,50% 62%,0 100%);background:#edcdca}
+.envelope-side-right{clip-path:polygon(100% 0,50% 62%,100% 100%);background:#dfbcbd}
+.envelope-seal{z-index:6;left:50%;top:49%;transform:translate(-50%,-50%);width:51px;height:51px;display:grid;place-items:center;border:1px solid #f5e3d8;border-radius:50%;background:linear-gradient(155deg,#ba8893,#976679);color:#fffaf8;font-size:31px;line-height:1;box-shadow:0 3px 10px #80545b45,inset 0 0 0 3px #ffffff27;transition:opacity .25s ease,transform .35s ease}
+.gate-flower{position:absolute;font-size:clamp(37px,5vw,58px);color:#d5a5a7;text-shadow:0 2px 6px #fff7;pointer-events:none}
+.gate-flower-a{left:0;bottom:4%;transform:rotate(-23deg)}.gate-flower-b{right:1%;top:8%;transform:rotate(24deg);color:#d8b4ac}
+.gate-sparkle{position:absolute;color:#c6ab8c;font-size:28px;pointer-events:none;animation:gate-twinkle 3s ease-in-out infinite}
+.gate-sparkle-a{left:4%;top:14%}.gate-sparkle-b{right:6%;bottom:9%;animation-delay:1.2s}
+@keyframes gate-twinkle{0%,100%{opacity:.5;transform:scale(.9)}50%{opacity:1;transform:scale(1.12)}}
+.gate-hint{font-size:12px;font-weight:700;letter-spacing:.08em;color:#a26d7d;margin:-2px 0 0;animation:gate-breathe 2.2s ease-in-out infinite}
+@keyframes gate-breathe{0%,100%{opacity:.73}50%{opacity:1}}
+.gate-hint span{color:#c29c9c;font-size:20px;vertical-align:-1px}
+.gate-footer{margin:clamp(12px,2vh,20px) 0 0;font-size:9px;letter-spacing:.21em;color:#ac8f8e}
+/* Animación: primero se abre la solapa, luego sale la tarjeta */
+.envelope-gate.is-opening .envelope-flap{transform:rotateX(175deg);z-index:1}
+.envelope-gate.is-opening .envelope-seal{opacity:0;transform:translate(-50%,-60%) scale(.65)}
+.envelope-gate.is-opening .envelope-card{transform:translateY(-49%);z-index:5}
+.envelope-gate.is-opening .gate-hint{animation:none;opacity:0}
+.envelope-gate.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+@media(max-width:580px){.envelope-gate::after{inset:11px}.gate-inner{padding:20px 12px}.gate-overline{letter-spacing:.21em;font-size:9px}.gate-title{font-size:clamp(33px,8.2vw,53px)}.gate-subtitle{font-size:12px}.gate-centerpiece{width:100%;height:clamp(215px,39vh,318px)}.gate-flower-a{left:-3%}.gate-flower-b{right:-2%}.gate-hint{margin-top:0}.gate-footer{font-size:8px}}
+@media(max-height:630px){.gate-stars{margin:8px 0 0}.gate-inner{padding:12px}.gate-centerpiece{height:clamp(195px,37vh,255px)}.gate-hint{margin:-4px 0}.gate-footer{margin:5px 0 0}.gate-pretitle{margin:3px 0 0}.gate-title{margin:4px 0}.gate-sparkle{display:none}}
+@media(prefers-reduced-motion:reduce){.envelope-gate,.envelope-gate *{transition:none!important;animation:none!important}}
